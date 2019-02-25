@@ -12,17 +12,6 @@ The goals / steps of this project are the following:
 * Make a pipeline that finds lane lines on the road
 * Reflect on your work in a written report
 
-
-[//]: # (Image References)
-
-[image1]: ./examples/grayscale.jpg "Grayscale"
-[gray_test]: ./gray_test.png "Grayscale"
-[blured_test]: ./blured_test.png "GaussianBluredImage"
-[canny_test]: ./canny_test.png "CannyEdge"
-[roi_test]: ./roi_test.png "ROI"
-[hough_test]: ./hough_test.png "HoughLines"
-[final_test]: ./final_test.png "FinalImageWithHoughLines"
-[yellow_white_test]: ./yellow_white_test.png "YellowWhiteFiltered"
 ---
 
 ### Reflection
