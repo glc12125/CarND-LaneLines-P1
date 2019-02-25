@@ -32,21 +32,26 @@ The goals / steps of this project are the following:
 My pipeline consisted of 6 steps:
 
 #### 1. Get Grayscale image
-![alt text][gray_test]
+<img src="gray_test.png" width="480" alt="Grayscale" />
+
 #### 2. Gaussian blur the gray image
-![alt text][blured_test]
+<img src="blured_test.png" width="480" alt="blured_test" />
+
 #### 3. Process the blured image to get canny edge
-![alt text][canny_test]
+<img src="canny_test.png" width="480" alt="canny_test" />
+
 #### 4. Apply a trapezoid polygon to mask the canny edge image
-![alt text][roi_test]
+<img src="roi_test.png" width="480" alt="roi_test" />
+
 #### 5. Get Hough lines in Hough space for the mask image
-![alt text][hough_test]
+<img src="hough_test.png" width="480" alt="hough_test" />
+
 #### 5. Draw lane lines on the original image
-![alt text][final_test]
+<img src="final_test.png" width="480" alt="final_test" />
 
 In order to also detect yellow lines, I filtered the image to get only the yellow and white pixels in the image and left all the other pixels to be black. This way, the later steps such as Canny edge detection will be more efficient.
 
-![alt text][yellow_white_test]
+<img src="yellow_white_test.png" width="480" alt="yellow_white_test" />
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by introducing the following 4 steps:
 ##### 1. Do a linear regression on both left and right lines to get the slopes and intersections for both lines to draw.
